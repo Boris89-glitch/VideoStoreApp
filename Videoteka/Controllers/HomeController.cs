@@ -9,7 +9,7 @@ namespace Videoteka.Controllers
     public class HomeController : Controller
     {
         public ActionResult Index()
-        {//testing git bash
+        {
             return View();
         }
 
