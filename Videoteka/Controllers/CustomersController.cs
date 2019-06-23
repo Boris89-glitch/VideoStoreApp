@@ -15,20 +15,16 @@ namespace Video_store_app.Controllers
     public class CustomersController : Controller
     {
         private ApplicationDbContext db; //to access db
-
         public CustomersController()
         {
             db = new ApplicationDbContext();
         }
 
-        // GET: Customers
         public ViewResult Index()
         {
-            var customers = db.Customers.Include(c => c.MembershipType).ToList();
-            
-            return View(customers);
-
+            return View();
         }
+
 
         public ActionResult New() 
         {
@@ -40,6 +36,7 @@ namespace Video_store_app.Controllers
             };
             return View("CustomerForm", viewModel);
         }
+
 
         [HttpPost]    //create new customer
         public ActionResult Save(Customer customer)
@@ -69,6 +66,7 @@ namespace Video_store_app.Controllers
             return RedirectToAction("Index","Customers");
         }
 
+
         public ActionResult Edit(int id) //edit customer
         {
             var customer = db.Customers.SingleOrDefault(c => c.Id == id);
@@ -83,6 +81,7 @@ namespace Video_store_app.Controllers
             };
             return View("CustomerForm", viewModel);
         }
+
 
         public ActionResult Details(int id)
         {

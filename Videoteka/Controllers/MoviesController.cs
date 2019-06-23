@@ -23,8 +23,7 @@ namespace Video_store_app.Controllers
         // GET: Movie
         public ViewResult Index()
         {
-            var movies = db.Movies.Include(m => m.Genre).ToList();
-            return View(movies);
+            return View();
         }
 
         public ActionResult New()

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNet.Identity.EntityFramework;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -21,32 +22,32 @@ namespace Videoteka.Controllers.Api
         //GET api/customers
         public IEnumerable<Customer> GetCustomers()
         {
-            return db.Customers.ToList();
+            return db.Customers.Include(c => c.MembershipType).ToList();
         }
 
         //GET api/customers/1
-        public Customer GetCustomers(int id)
+        public IHttpActionResult GetCustomers(int id)
         {
             var customer = db.Customers.SingleOrDefault(c => c.Id == id);
             if (customer == null)
             {
-                throw new HttpResponseException(HttpStatusCode.NotFound);
+                return BadRequest();
             }
-            return customer;
+            return Ok(customer);
         }
 
         //POST api/customers
         [HttpPost]
-        public Customer CreateCustomer(Customer customer)
+        public IHttpActionResult CreateCustomer(Customer customer)
         {
             if (!ModelState.IsValid)
             {
-                throw new HttpResponseException(HttpStatusCode.BadRequest);
+                return BadRequest();
             }
             db.Customers.Add(customer);
             db.SaveChanges();
 
-            return customer;
+            return Created(new Uri(Request.RequestUri + "/" + customer.Id), customer);
         }
 
         //PUT api/customers/1
@@ -72,16 +73,16 @@ namespace Videoteka.Controllers.Api
 
         //DELETE api/customers/1
         [HttpDelete]
-        public void DeleteCustomer(int id)
+        public IHttpActionResult DeleteCustomer(int id)
         {
             var customer = db.Customers.SingleOrDefault(c => c.Id == id);
             if (customer == null)
             {
-                throw new HttpResponseException(HttpStatusCode.NotFound);
+                return NotFound();
             }
             db.Customers.Remove(customer);
             db.SaveChanges();
-            
+            return Ok();
         }
     }
 }
