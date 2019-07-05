@@ -243,6 +243,14 @@
     <Compile Include="Migrations\201906241110003_SeedUsers.Designer.cs">
       <DependentUpon>201906241110003_SeedUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201907021059472_Rentals.cs" />
+    <Compile Include="Migrations\201907021059472_Rentals.Designer.cs">
+      <DependentUpon>201907021059472_Rentals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907021629277_NumberAvailable.cs" />
+    <Compile Include="Migrations\201907021629277_NumberAvailable.Designer.cs">
+      <DependentUpon>201907021629277_NumberAvailable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\SetNameToMembershipType.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -252,11 +260,13 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipTypes.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\NewRental.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\CustomerFormViewModel.cs" />
     <Compile Include="ViewModels\MovieFormViewModel.cs" />
     <Compile Include="ViewModels\RandomMovieViewModel.cs" />
+    <Compile Include="Models\Rentals.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -557,6 +567,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906241110003_SeedUsers.resx">
       <DependentUpon>201906241110003_SeedUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907021059472_Rentals.resx">
+      <DependentUpon>201907021059472_Rentals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907021629277_NumberAvailable.resx">
+      <DependentUpon>201907021629277_NumberAvailable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

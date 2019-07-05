@@ -12,6 +12,7 @@ using Videoteka.ViewModels;
 
 namespace Video_store_app.Controllers
 {
+    [Authorize(Roles = "CanManageMovies")]
     public class CustomersController : Controller
     {
         private ApplicationDbContext db; //to access db

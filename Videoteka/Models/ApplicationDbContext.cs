@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Video_store_app.Models;
+using Videoteka.ViewModels;
 
 namespace Videoteka.Models
 {
@@ -23,6 +24,7 @@ namespace Videoteka.Models
         public DbSet<Movie> Movies { get; set; }
         public DbSet<Genre> Genres { get; set; }
         public DbSet<MembershipTypes> MembershipTypes { get; set; }
+        public DbSet<Rentals> Rentals { get; set; }
 
         public ApplicationDbContext() : base("DefaultConnection", throwIfV1Schema: false)
         {

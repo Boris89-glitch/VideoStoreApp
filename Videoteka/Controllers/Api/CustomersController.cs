@@ -11,6 +11,7 @@ using Videoteka.Models;
 
 namespace Videoteka.Controllers.Api
 {
+    [Authorize(Roles = "CanManageMovies")]
     public class CustomersController : ApiController
     {
         private ApplicationDbContext db;

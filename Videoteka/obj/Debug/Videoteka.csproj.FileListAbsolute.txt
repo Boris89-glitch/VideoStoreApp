@@ -124,3 +124,5 @@ C:\Users\Boris and Tijanaaa\Desktop\VS vezbe i programi\Videoteka\Videoteka\bin\
 C:\Users\Boris and Tijanaaa\Desktop\VS vezbe i programi\Videoteka\Videoteka\bin\System.Web.Http.WebHost.xml
 C:\Users\Boris and Tijanaaa\Desktop\VS vezbe i programi\Videoteka\Videoteka\obj\Debug\Videoteka.csprojAssemblyReference.cache
 C:\Users\Boris and Tijanaaa\Desktop\VS vezbe i programi\Videoteka\Videoteka\obj\Debug\Videoteka.Migrations.SeedUsers.resources
+C:\Users\Boris and Tijanaaa\Desktop\VS vezbe i programi\Videoteka\Videoteka\obj\Debug\Videoteka.Migrations.Rentals.resources
+C:\Users\Boris and Tijanaaa\Desktop\VS vezbe i programi\Videoteka\Videoteka\obj\Debug\Videoteka.Migrations.NumberAvailable.resources

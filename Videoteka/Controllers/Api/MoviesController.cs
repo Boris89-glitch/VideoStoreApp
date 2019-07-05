@@ -36,7 +36,6 @@ namespace Videoteka.Controllers.Api
         }
 
         //POST api/movies
-        [Authorize(Roles = "CanManageMovies")]
         [HttpPost]
         public IHttpActionResult CreateMovie(Movie movie)
         {
@@ -51,7 +50,6 @@ namespace Videoteka.Controllers.Api
         }
 
         //PUT api/movies/1
-        [Authorize(Roles = "CanManageMovies")]
         [HttpPut]
         public IHttpActionResult UpdateMovies(int id, Movie movie)
         {
@@ -75,7 +73,6 @@ namespace Videoteka.Controllers.Api
         }
 
         //DELETE api/movies/1
-        [Authorize(Roles = "CanManageMovies")]
         [HttpDelete]
         public void DeleteMovie(int id)
         {

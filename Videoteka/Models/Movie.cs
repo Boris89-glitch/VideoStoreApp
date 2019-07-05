@@ -16,6 +16,7 @@ namespace Video_store_app.Models
 
         [Range(1, 20, ErrorMessage = "Enter between 1 and 20 here.")]
         public byte NumberInStock { get; set; }
+        public byte NumberAvailable { get; set; }
         public Genre Genre { get; set; }
     }
 }
