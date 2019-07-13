@@ -257,6 +257,10 @@
     <Compile Include="Migrations\201907021629277_NumberAvailable.Designer.cs">
       <DependentUpon>201907021629277_NumberAvailable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201907130652457_Rentals1.cs" />
+    <Compile Include="Migrations\201907130652457_Rentals1.Designer.cs">
+      <DependentUpon>201907130652457_Rentals1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\SetNameToMembershipType.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -593,6 +597,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201907021629277_NumberAvailable.resx">
       <DependentUpon>201907021629277_NumberAvailable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907130652457_Rentals1.resx">
+      <DependentUpon>201907130652457_Rentals1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
