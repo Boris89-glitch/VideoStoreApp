@@ -232,7 +232,6 @@ C:\Users\Boris and Tijanaaa\source\repos\Videoteka\Videoteka\bin\Microsoft.Owin.
 C:\Users\Boris and Tijanaaa\source\repos\Videoteka\Videoteka\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Boris and Tijanaaa\source\repos\Videoteka\Videoteka\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\Boris and Tijanaaa\source\repos\Videoteka\Videoteka\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Boris and Tijanaaa\source\repos\Videoteka\Videoteka\obj\Debug\Videoteka.csprojAssemblyReference.cache
 C:\Users\Boris and Tijanaaa\source\repos\Videoteka\Videoteka\obj\Debug\Videoteka.Migrations.initialModel.resources
 C:\Users\Boris and Tijanaaa\source\repos\Videoteka\Videoteka\obj\Debug\Videoteka.Migrations.IsSubbed.resources
 C:\Users\Boris and Tijanaaa\source\repos\Videoteka\Videoteka\obj\Debug\Videoteka.Migrations.AddMembershipType.resources
@@ -255,3 +254,5 @@ C:\Users\Boris and Tijanaaa\source\repos\Videoteka\Videoteka\obj\Debug\Videoteka
 C:\Users\Boris and Tijanaaa\source\repos\Videoteka\Videoteka\obj\Debug\Videoteka.dll
 C:\Users\Boris and Tijanaaa\source\repos\Videoteka\Videoteka\obj\Debug\Videoteka.pdb
 C:\Users\Boris and Tijanaaa\source\repos\Videoteka\Videoteka\bin\WebActivatorEx.dll
+C:\Users\Boris and Tijanaaa\source\repos\Videoteka\Videoteka\obj\Debug\Videoteka.Migrations.Rentals1.resources
+C:\Users\Boris and Tijanaaa\source\repos\Videoteka\Videoteka\obj\Debug\Videoteka.csprojAssemblyReference.cache

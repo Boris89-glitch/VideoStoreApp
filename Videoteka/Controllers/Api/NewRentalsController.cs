@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using Video_store_app.Models;
 using Videoteka.Models;
 using Videoteka.ViewModels;
 
@@ -20,14 +21,16 @@ namespace Videoteka.Controllers.Api
         [HttpPost]
         public IHttpActionResult CreateNewRentals(NewRental newRental)
         {
-            var customer = db.Customers.SingleOrDefault(c => c.Id == newRental.CustomerId);
-            var movies = db.Movies.Where(m => newRental.MovieIds.Contains(m.Id));
+            var customer = db.Customers.Single(c => c.Id == newRental.CustomerId);
+
+            var movies = db.Movies.Where(m => newRental.MovieIds.Contains(m.Id)).ToList();
+            //var customer = db.Customers.Where(c => c.Id == x.Id).First();
 
             foreach (var movie in movies)
             {
                 if (movie.NumberAvailable == 0)
                 {
-                    return BadRequest("Movie is not available.");
+                    return BadRequest();
                 }
                 movie.NumberAvailable--;
 
